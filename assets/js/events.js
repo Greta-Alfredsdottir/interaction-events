@@ -13,7 +13,6 @@ const mySubButton = document.getElementById('subtractButton');
 
 
 
-
 //-------------------------------------------------------------------------
 
 // named functions du kan kalde fra eventhandlers

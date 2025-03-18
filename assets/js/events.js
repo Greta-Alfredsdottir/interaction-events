@@ -10,7 +10,8 @@ const mySubButton = document.getElementById('subtractButton');
 
 
 // skriv din eventhandler kode her ---------------------------------------
-
+myAddButton.addEventListener('click', addValue)   //lægger 1 til
+mySubButton.addEventListener('click',subtractValue)   //trækker 1 fra
 
 
 //-------------------------------------------------------------------------
@@ -48,6 +49,18 @@ const diceButton = document.getElementById('rollDiceOne');
     showResult(diceRoll, myDiceRes) */
 
 // skriv din eventhandler kode her ---------------------------------------
+myDiceRes.addEventListener('click', () => {
+    diceResult();
+})
+function diceResult() {
+    let diceRoll = getRandomNumber(1,7);
+    showResult(diceRoll, myDiceRes)
+}
+diceButton.addEventListener('click', () => {
+    let diceRoll = getRandomNumber(1, 7);
+    showResult(diceRoll, myDiceRes)
+})
+
 
 
 
